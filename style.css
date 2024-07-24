@@ -24,7 +24,7 @@ body {
   background-color: var(--main_background_color);
 }
 
-/* ------------------- HEADER ------------------------- */
+/* -------------------------------- HEADER ------------------------- */
 header {
   width: 100vw;
   height: 24%;
@@ -73,17 +73,16 @@ header {
   justify-content: space-between;
 }
 
-/* LEFT */
+/* ----------------------------------------------- LEFT */
 .header_row2_content_left {
   margin-left: 10rem;
-  margin-bottom: 2rem;
 }
 
 .header_row2_content_left img {
-  width: 200%;
+  width: 260%;
 }
 
-/* CENTER */
+/* ----------------------------------------------- CENTER */
 .header_row2_content_center {
   position: relative;
   width: 50rem;
@@ -91,7 +90,7 @@ header {
 
 .header_row2_content_center input {
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   border: none;
   outline: none;
   text-align: center;
@@ -105,7 +104,7 @@ header {
 .header_row2_content_center input::placeholder {
   color: var(--past_color);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .header_row2_content_center button {
@@ -115,7 +114,6 @@ header {
   background-color: var(--second_background_color);
   border: none;
   border-radius: 0.3rem;
-  border-left: solid 0.1rem rgb(0, 0, 0, 0.15);
   cursor: pointer;
   height: 100%;
   padding: 2rem;
@@ -125,8 +123,9 @@ header {
   background-color: var(--past_color);
 }
 
-/* RIGHT */
+/* ------------------------------------------------ RIGHT */
 .header_row2_content_right {
+  font-family: "Oswald", sans-serif;
   margin-right: 10rem;
   width: 60rem;
 
@@ -142,7 +141,7 @@ header {
 }
 
 .header_row2_content_right i {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--second_background_color);
   padding: 1rem;
 }
@@ -155,9 +154,11 @@ header {
 
 /* -------------------------------------------------------------- ROW3 */
 .header_row3 {
+  font-family: "Oswald", sans-serif;
   background-color: var(--second_background_color);
+  box-shadow: #7f7f7f 0 0 1px 0;
   width: 100vw;
-  height: 30%;
+  height: 25%;
 
   display: flex;
   align-items: center;
@@ -172,7 +173,7 @@ header {
 }
 
 .header_row3 img {
-  width: 6rem;
+  width: 4rem;
   margin-right: 1rem;
 }
 
@@ -181,12 +182,170 @@ header {
   align-items: center;
   font-size: 2.5rem;
   color: var(--second_color);
-  font-weight: bold;
 }
 
-/* ------------------- MAIN ---------------------------------- */
-.test {
-  height: 50px;
-  width: 50px;
-  background-color: gray;
+.header_row3 a {
+  text-decoration: none;
+}
+
+.upc:hover {
+  color: var(--highlighting_color);
+}
+
+.upc_black {
+  color: var(--second_color);
+}
+
+.upc_black:hover {
+  text-decoration: underline;
+  background-color: var(--main_background_color);
+}
+
+/* .dropdown li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.fa-angle-right {
+  color: var(--second_past_color);
+}
+
+
+/* ------------------------------------ DROPDOWN START */
+.header_row3 ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.header_row3 li div {
+display: block;
+/* text-align: center; */
+}
+
+.header_row3 ul li ul.dropdown li {
+  display: block;
+}
+
+.header_row3 ul li ul.dropdown {
+  background-color: var(--second_background_color);
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.header_row3 .dropdown a:hover {
+  background-color: var(--main_background_color);
+}
+
+.header_row3 ul li:hover ul.dropdown {
+  display: block;
+}
+/* --------------------------------------- DROPDOWN END */
+
+
+
+
+
+/* ------------------------------------------------------ MAIN ---------------------------------- */
+.aktuelle_seite {
+  height: 5rem;
+  width: 100%;
+  font-size: 2rem;
+  margin-left: 10rem;
+  padding: 1rem 0;
+}
+
+.aktuelle_seite i {
+  margin: 0 1.5rem;
+}
+
+.aktuelle_seite a {
+  text-decoration: none;
+}
+
+.aktuelle_seite .link1 {
+  color: var(--second_past_color);
+}
+
+.aktuelle_seite .link2 {
+  color: var(--highlighting_color);
+}
+
+
+/* ------------------------------------MAIN SECTION-1 */
+.grid_test {
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgba(0, 0, 0, 0.404);
+  margin: 0 10rem;
+  height: 46rem;
+  z-index: 10;
+}
+
+.standort_pic {
+  border-radius: 2rem;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
+.nbg_pic {
+  border-radius: 2rem;
+  position: absolute;
+  z-index: -10;
+}
+
+.standort_pic p {
+  position: absolute;
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  padding: 5rem;
+  z-index: 999;
+}
+
+.standort_pic img {
+  width: 100%;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+
+/* ----------------------------------- MAIN SECTION-2 */
+.upc_fix {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  margin: 3rem 0 2rem 3rem;
+}
+
+.kontakt_time_adress {
+  height: 25rem;
+  margin: 2rem 10rem 4rem 10rem;
+  background-color: var(--second_background_color);
+  border-radius: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.kontakt_time_adress i {
+  color: var(--highlighting_color);
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.kontakt_time_adress p {
+  font-size: 2rem;
+  margin-left: 3rem;
+  padding: 0.5rem;
+}
+
+.kontakt_time_adress .p2, .kontakt_time_adress .p3 {
+  padding-left: 4rem;
 }
